@@ -15,8 +15,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: 'Aevon – Chatbot Cerdas untuk Bisnis Kamu',
-  description: 'Landing page Aevon yang menampilkan solusi chatbot AI untuk UMKM.',
+  title: 'Aevon – Chatbot Cerdas',
+  description: 'Landing page Aevon, solusi chatbot AI',
 };
 
 export default function RootLayout({ children }) {
