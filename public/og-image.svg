@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="36" fill="#0F1C27"/>
+  <rect x="64" y="64" width="1072" height="502" rx="28" fill="url(#paint0_linear)"/>
+  <circle cx="960" cy="200" r="140" fill="#9CD5FF" fill-opacity="0.22"/>
+  <circle cx="260" cy="474" r="180" fill="#7AAACE" fill-opacity="0.18"/>
+  <path d="M330 300C330 250.771 368.771 212 418 212H530C579.229 212 618 250.771 618 300V314C618 363.229 579.229 402 530 402H418C368.771 402 330 363.229 330 314V300Z" fill="#F7F8F0" fill-opacity="0.95"/>
+  <rect x="354" y="238" width="226" height="34" rx="17" fill="#355872"/>
+  <rect x="354" y="286" width="174" height="22" rx="11" fill="#7AAACE"/>
+  <rect x="354" y="322" width="144" height="22" rx="11" fill="#9CD5FF"/>
+  <rect x="700" y="220" width="220" height="160" rx="24" fill="#F7F8F0" fill-opacity="0.96"/>
+  <rect x="724" y="246" width="116" height="16" rx="8" fill="#355872"/>
+  <rect x="724" y="280" width="172" height="14" rx="7" fill="#7AAACE"/>
+  <rect x="724" y="308" width="144" height="14" rx="7" fill="#9CD5FF"/>
+  <path d="M742 388C742 361.49 764.49 339 791 339H892C918.51 339 941 361.49 941 388V388C941 414.51 918.51 437 892 437H791C764.49 437 742 414.51 742 388V388Z" fill="#F7F8F0" fill-opacity="0.96"/>
+  <path d="M770 388H913" stroke="#355872" stroke-width="18" stroke-linecap="round"/>
+  <path d="M770 388L792 366" stroke="#355872" stroke-width="18" stroke-linecap="round"/>
+  <text x="86" y="520" fill="#F7F8F0" font-family="Arial, sans-serif" font-size="56" font-weight="700">Aevon</text>
+  <text x="86" y="570" fill="#9CD5FF" font-family="Arial, sans-serif" font-size="34">Chatbot AI untuk bisnis yang responsif</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="64" y1="64" x2="1136" y2="566" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2E3D"/>
+      <stop offset="1" stop-color="#355872"/>
+    </linearGradient>
+  </defs>
+</svg>

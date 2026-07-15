@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect } from 'react';
 
 export default function HomePage() {
@@ -317,16 +318,16 @@ export default function HomePage() {
     <>
       <nav className="navbar" id="navbar">
         <div className="nav-container">
-          <a href="#" className="nav-logo">
+          <Link href="/" className="nav-logo">
             <div className="logo-icon">A</div>
             Aevon
-          </a>
+          </Link>
           <ul className="nav-links" id="navLinks">
             <li><a href="#features">Fitur</a></li>
             <li><a href="#how">Cara Kerja</a></li>
             <li><a href="#benefits">Keuntungan</a></li>
             <li><a href="#testimonials">Testimoni</a></li>
-            <li><a href="#cta" className="nav-cta">Coba Gratis</a></li>
+            <li><Link href="/contact" className="nav-cta">Coba Gratis</Link></li>
           </ul>
           <button className="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
             <span></span>
@@ -350,27 +351,27 @@ export default function HomePage() {
               Chatbot AI · Aktif 24/7
             </div>
             <h1 className="hero-title">
-              Bisnis Anda Masih<br />
-              <span className="highlight">Slow Response?</span>
+              Chatbot AI untuk<br />
+              <span className="highlight">WhatsApp, Instagram & Website</span>
             </h1>
             <p className="hero-subtitle">
-              Setiap menit pelanggan menunggu balasan, peluang penjualan berkurang. Kompetitor yang lebih responsif akan mengambil alih — dan itu terjadi lebih sering dari yang Anda kira.
+              Aevon membantu bisnis menjawab pelanggan lebih cepat, mengotomatiskan layanan 24/7, dan meningkatkan konversi lewat chatbot AI yang natural di platform favorit Anda.
             </p>
             <div className="hero-actions">
-              <a href="#cta" className="btn-primary">
+              <Link href="/contact" className="btn-primary">
                 Mulai Gratis 7 Hari
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
                 </svg>
-              </a>
-              <a href="#features" className="btn-secondary">
-                Pelajari Lebih Lanjut
+              </Link>
+              <Link href="/services" className="btn-secondary">
+                Lihat Layanan Kami
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <polyline points="7 13 12 18 17 13" />
                   <polyline points="7 6 12 11 17 6" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -452,8 +453,8 @@ export default function HomePage() {
         <div className="section-container">
           <div className="section-header reveal">
             <div className="section-label">Kenapa Aevon</div>
-            <h2 className="section-title">Satu Chatbot, Semua Channel Bisnis Anda Terjaga</h2>
-            <p className="section-desc">Aevon bukan chatbot biasa yang menjawab dengan template kaku. Sistem kami memahami konteks percakapan dan merespons dengan bahasa yang natural — persis seperti tim customer service terbaik Anda.</p>
+            <h2 className="section-title">Chatbot AI untuk Customer Service 24/7 yang Lebih Cepat dan Efisien</h2>
+            <p className="section-desc">Aevon membantu bisnis mengotomatiskan layanan pelanggan di WhatsApp, Instagram, dan website dengan chatbot AI yang natural, cepat, dan siap menangani pertanyaan berulang tanpa mengorbankan kualitas.</p>
           </div>
 
           <div className="features-showcase reveal">
@@ -536,8 +537,8 @@ export default function HomePage() {
             <div className="how-content">
               <div className="section-header-left reveal">
                 <div className="section-label">Cara Kerja</div>
-                <h2 className="section-title">Dari Konsultasi Sampai Go Live, Kami yang Urus</h2>
-                <p className="section-desc">Anda tidak perlu paham soal teknologi. Cukup ceritakan bagaimana bisnis Anda berjalan, sisanya biar tim kami yang kerjakan.</p>
+                <h2 className="section-title">Solusi Implementasi Chatbot AI yang Mudah dan Terarah</h2>
+                <p className="section-desc">Anda tidak perlu paham soal teknologi. Cukup ceritakan tujuan bisnis Anda, lalu tim Aevon yang akan merancang alur chatbot yang cocok untuk layanan pelanggan dan penjualan.</p>
               </div>
               <div className="how-steps-vertical">
                 <div className="step-card-h reveal">
@@ -753,17 +754,17 @@ export default function HomePage() {
           <h2 className="cta-title">Pelanggan Anda Tidak Akan Menunggu Selamanya</h2>
           <p className="cta-desc">Jadikan bisnis Anda lebih responsif mulai hari ini. Tim Aevon siap membantu Anda membangun chatbot yang bekerja — bukan sekadar menjawab, tapi menghasilkan penjualan. <strong style={{ color: 'var(--accent)' }}>Konsultasi gratis, uji coba 7 hari tanpa biaya.</strong></p>
           <div className="cta-actions">
-            <a href="#" className="btn-primary" id="ctaWhatsapp">
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="btn-primary" id="ctaWhatsapp">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
               Hubungi via WhatsApp
             </a>
-            <a href="#" className="btn-secondary" id="ctaDM">
+            <Link href="/contact" className="btn-secondary" id="ctaDM">
               Kirim Pesan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="22" y1="2" x2="11" y2="13" />
                 <polygon points="22 2 15 22 11 13 2 9 22 2" />
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="cta-trust">
             <div className="trust-item">
@@ -798,53 +799,53 @@ export default function HomePage() {
         <div className="footer-container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <a href="#" className="nav-logo">
+              <Link href="/" className="nav-logo">
                 <div className="logo-icon">A</div>
                 Aevon
-              </a>
+              </Link>
               <p>Jasa pembuatan chatbot terintegrasi yang menjadi perpanjangan tangan tim bisnis Anda — 24 jam penuh, tanpa jeda, tanpa kompromi kualitas.</p>
             </div>
             <div className="footer-col">
               <h4>Layanan</h4>
               <ul>
-                <li><a href="#">Chatbot WhatsApp</a></li>
-                <li><a href="#">Chatbot Instagram</a></li>
-                <li><a href="#">Chatbot Website</a></li>
-                <li><a href="#">Custom Integration</a></li>
+                <li><Link href="/services">Chatbot WhatsApp</Link></li>
+                <li><Link href="/services">Chatbot Instagram</Link></li>
+                <li><Link href="/services">Chatbot Website</Link></li>
+                <li><Link href="/services">Custom Integration</Link></li>
               </ul>
             </div>
             <div className="footer-col">
               <h4>Perusahaan</h4>
               <ul>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Studi Kasus</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Karir</a></li>
+                <li><Link href="/services">Tentang Kami</Link></li>
+                <li><Link href="/services">Studi Kasus</Link></li>
+                <li><Link href="/services">Blog</Link></li>
+                <li><Link href="/contact">Karir</Link></li>
               </ul>
             </div>
             <div className="footer-col">
               <h4>Bantuan</h4>
               <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Dokumentasi</a></li>
-                <li><a href="#">Kebijakan Privasi</a></li>
-                <li><a href="#">Hubungi Kami</a></li>
+                <li><Link href="/services">FAQ</Link></li>
+                <li><Link href="/services">Dokumentasi</Link></li>
+                <li><Link href="/services">Kebijakan Privasi</Link></li>
+                <li><Link href="/contact">Hubungi Kami</Link></li>
               </ul>
             </div>
           </div>
           <div className="footer-bottom">
             <p>&copy; 2026 Aevon Chatbot. All rights reserved.</p>
             <div className="footer-socials">
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
               </a>
-              <a href="#" aria-label="Twitter">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
               </a>
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
               </a>
-              <a href="#" aria-label="YouTube">
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
               </a>
             </div>
