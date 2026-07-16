@@ -4,6 +4,13 @@ export const metadata = {
   title: 'Layanan Chatbot AI Aevon',
   description:
     'Temukan layanan chatbot AI Aevon untuk WhatsApp, Instagram, website, dan integrasi custom sesuai kebutuhan bisnis Anda.',
+  alternates: {
+    canonical: '/services',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function ServicesPage() {

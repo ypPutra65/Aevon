@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://aevonchatbot.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aevonchatbot.vercel.app';
 
   return [
     {
@@ -7,6 +7,18 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
+    },
+    {
+      url: `${baseUrl}/services`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
   ];
 }

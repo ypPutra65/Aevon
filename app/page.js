@@ -1,7 +1,39 @@
 'use client';
 
 import Link from 'next/link';
+import Script from 'next/script';
 import { useEffect } from 'react';
+
+const faqStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Apa itu chatbot AI Aevon?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Aevon adalah layanan chatbot AI yang membantu bisnis merespons pelanggan secara otomatis di WhatsApp, Instagram, dan website.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Apakah chatbot bisa dipasang di WhatsApp dan Instagram?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ya, chatbot Aevon dapat diintegrasikan ke WhatsApp, Instagram, dan website dengan alur percakapan yang sesuai kebutuhan bisnis Anda.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Berapa lama proses setup-nya?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Proses setup biasanya berlangsung cepat, tergantung kompleksitas alur chatbot yang ingin Anda gunakan.',
+      },
+    },
+  ],
+};
 
 export default function HomePage() {
   useEffect(() => {
@@ -319,7 +351,9 @@ export default function HomePage() {
       <nav className="navbar" id="navbar">
         <div className="nav-container">
           <Link href="/" className="nav-logo">
-            <div className="logo-icon">A</div>
+            <div className="logo-icon">
+              <img src="/icon.svg" alt="Aevon logo" />
+            </div>
             Aevon
           </Link>
           <ul className="nav-links" id="navLinks">
@@ -372,6 +406,11 @@ export default function HomePage() {
                   <polyline points="7 6 12 11 17 6" />
                 </svg>
               </Link>
+            </div>
+            <div className="hero-trust">
+              <span>✓ Setup cepat</span>
+              <span>✓ Tanpa biaya awal</span>
+              <span>✓ Support 24/7</span>
             </div>
           </div>
 
@@ -680,6 +719,34 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section faq-section" id="faq">
+        <div className="section-container">
+          <div className="section-header reveal">
+            <div className="section-label">FAQ</div>
+            <h2 className="section-title">Pertanyaan yang Sering Diajukan tentang Aevon</h2>
+            <p className="section-desc">Informasi singkat tentang manfaat, cara kerja, dan integrasi chatbot AI yang kami tawarkan untuk bisnis modern.</p>
+          </div>
+          <div className="faq-grid">
+            <details className="faq-item reveal">
+              <summary>Apa itu chatbot AI Aevon?</summary>
+              <p>Aevon adalah solusi chatbot AI yang membantu bisnis merespons pertanyaan pelanggan secara otomatis di berbagai kanal seperti WhatsApp, Instagram, dan website.</p>
+            </details>
+            <details className="faq-item reveal reveal-delay-1">
+              <summary>Apakah cocok untuk usaha kecil dan menengah?</summary>
+              <p>Ya. Aevon bisa disesuaikan untuk bisnis kecil, UMKM, hingga perusahaan yang sudah memiliki sistem layanan pelanggan lebih kompleks.</p>
+            </details>
+            <details className="faq-item reveal reveal-delay-2">
+              <summary>Bisakah chatbot ini meningkatkan penjualan?</summary>
+              <p>Biasanya ya. Dengan respons cepat dan follow-up otomatis, chatbot membantu mengurangi hambatan dalam proses pembelian dan meningkatkan konversi.</p>
+            </details>
+            <details className="faq-item reveal reveal-delay-3">
+              <summary>Bagaimana cara memulai?</summary>
+              <p>Anda cukup menghubungi tim Aevon untuk konsultasi awal, lalu kami bantu menyiapkan chatbot yang paling sesuai dengan bisnis Anda.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <section className="section testimonials-section" id="testimonials">
         <div className="section-container">
           <div className="section-header reveal">
@@ -795,12 +862,18 @@ export default function HomePage() {
         </div>
       </section>
 
+      <Script id="faq-structured-data" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify(faqStructuredData)}
+      </Script>
+
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-grid">
             <div className="footer-brand">
               <Link href="/" className="nav-logo">
-                <div className="logo-icon">A</div>
+                <div className="logo-icon">
+                  <img src="/icon.svg" alt="Aevon logo" />
+                </div>
                 Aevon
               </Link>
               <p>Jasa pembuatan chatbot terintegrasi yang menjadi perpanjangan tangan tim bisnis Anda — 24 jam penuh, tanpa jeda, tanpa kompromi kualitas.</p>

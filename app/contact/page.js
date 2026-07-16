@@ -4,6 +4,13 @@ export const metadata = {
   title: 'Hubungi Aevon',
   description:
     'Hubungi Aevon untuk konsultasi chatbot AI, demo gratis, dan implementasi layanan pelanggan yang lebih cepat.',
+  alternates: {
+    canonical: '/contact',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function ContactPage() {

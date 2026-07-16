@@ -1,15 +1,15 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="256" height="256" rx="64" fill="#0F1C27"/>
-  <rect x="56" y="56" width="144" height="144" rx="36" fill="url(#paint0_linear)"/>
-  <path d="M90 112C90 95.4315 103.431 82 120 82H136C152.569 82 166 95.4315 166 112V116C166 132.569 152.569 146 136 146H120C103.431 146 90 132.569 90 116V112Z" fill="#F7F8F0"/>
-  <rect x="102" y="100" width="64" height="12" rx="6" fill="#355872"/>
-  <rect x="102" y="122" width="40" height="8" rx="4" fill="#9CD5FF"/>
-  <path d="M104 168H152" stroke="#F7F8F0" stroke-width="12" stroke-linecap="round"/>
-  <path d="M112 184H144" stroke="#7AAACE" stroke-width="12" stroke-linecap="round"/>
-  <defs>
-    <linearGradient id="paint0_linear" x1="56" y1="56" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#355872"/>
-      <stop offset="1" stop-color="#7AAACE"/>
-    </linearGradient>
-  </defs>
+  <rect width="256" height="256" rx="64" fill="#FFFFFF"/>
+  <path d="M128 38C85.6 38 52 68.4 52 106.5c0 20.7 10.5 39.4 27.4 52.2-2 11.2-8.4 26.8-17.2 35.8l-1.3 1.4c-1.7 1.8-2.2 4.5-1.3 6.8 0.9 2.3 3.1 3.9 5.6 3.9 0.5 0 1-0.1 1.5-0.2l22.1-6.1c5.6 2.2 12 3.4 18.7 3.4 42.4 0 76.8-30.3 76.8-68.4S170.4 38 128 38Z" fill="#0D2E61"/>
+  <path d="M93 104c0-7.2 5.8-13 13-13s13 5.8 13 13-5.8 13-13 13-13-5.8-13-13Z" fill="#FFFFFF"/>
+  <path d="M150 104c0-7.2 5.8-13 13-13s13 5.8 13 13-5.8 13-13 13-13-5.8-13-13Z" fill="#FFFFFF"/>
+  <path d="M84 118c10.3 11.4 29.3 15.3 44 15.3s33.7-3.9 44-15.3" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M76 68c16.6-17.8 42.7-28 70-28s53.4 10.2 70 28" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M102 148h52" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M82 82h18" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M156 82h18" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M103 66c0-10.5 8.5-19 19-19h12c10.5 0 19 8.5 19 19" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M84 98c-12 8-18 22-18 34 0 18 15 33 33 33h2" stroke="#0D2E61" stroke-width="14" stroke-linecap="round"/>
+  <path d="M172 98c12 8 18 22 18 34 0 18-15 33-33 33h-2" stroke="#0D2E61" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="128" cy="118" r="10" fill="#0D2E61"/>
 </svg>

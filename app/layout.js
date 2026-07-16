@@ -14,7 +14,7 @@ const dmSans = DM_Sans({
   variable: '--font-dm',
 });
 
-const siteUrl = 'https://aevonchatbot.vercel.app';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aevonchatbot.vercel.app';
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -27,14 +27,28 @@ const structuredData = {
   sameAs: ['https://www.instagram.com', 'https://www.linkedin.com'],
 };
 
+const websiteStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Aevon',
+  url: siteUrl,
+  description:
+    'Jasa chatbot AI untuk bisnis yang ingin memberikan layanan pelanggan otomatis 24/7 di WhatsApp, Instagram, dan website.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${siteUrl}/?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Aevon | Chatbot AI untuk Bisnis yang Responsif',
+    default: 'Aevon | Jasa Chatbot AI WhatsApp, Instagram & Website',
     template: '%s | Aevon',
   },
   description:
-    'Aevon membantu bisnis meningkatkan layanan pelanggan dengan chatbot AI cerdas yang terhubung ke WhatsApp, Instagram, dan website.',
+    'Aevon adalah jasa chatbot AI untuk bisnis yang ingin melayani pelanggan 24/7 di WhatsApp, Instagram, dan website dengan respons cepat dan otomatis.',
   keywords: [
     'chatbot AI',
     'chatbot bisnis',
@@ -108,6 +122,9 @@ export default function RootLayout({ children }) {
 
         <Script id="structured-data" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify(structuredData)}
+        </Script>
+        <Script id="website-structured-data" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify(websiteStructuredData)}
         </Script>
 
         {/* Script Google Analytics 4 */}
